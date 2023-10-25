@@ -53017,7 +53017,7 @@ async function run() {
     };
     console.log(JSON.stringify(params, null, 2), 'params~~~');
 
-    await github.repos.createRelease(parmas);
+    await github.repos.createRelease(params);
   } catch (error) {
     core.setFailed(error.message);
   }
